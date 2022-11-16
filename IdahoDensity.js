@@ -80,9 +80,7 @@ function ready([us]) {
             div.transition()
                 .duration(500)
                 .style("opacity", 0);
-        })
-        .append("title")
-        .text(function(d) { return d.rate + "%"; });
+        });
 
     // Border Lines
     var borderData = topojson.feature(us, us.objects.counties);
